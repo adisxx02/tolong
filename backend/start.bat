@@ -1,0 +1,3 @@
+@echo off
+echo Starting Tambakaji Pharmacy Hub server...
+node server.js 
