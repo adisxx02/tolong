@@ -1,5 +1,5 @@
 // API service for communicating with the backend
-const API_URL = '/api';
+const API_URL = import.meta.env.VITE_API_URL || '/api';
 
 // Helper function to handle API responses
 const handleResponse = async (response: Response) => {
@@ -215,4 +215,4 @@ export const api = {
     fetch(`${API_URL}/users/${id}`, {
       method: 'DELETE'
     }).then(handleResponse)
-}; 
+};
