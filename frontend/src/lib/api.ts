@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 // API service for communicating with the backend
 const API_URL = import.meta.env.VITE_API_URL || '/api';
 
